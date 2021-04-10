@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static(__dirname+"/public"));
 
-mongoose.connect("mongodb://localhost:27017/magazineUsersDB",{useNewUrlParser:true});
+mongoose.connect("mongodb+srv://admin-shweta-js:shvetajs2$ms@cluster0.h5zxp.mongodb.net/magazineUsersDB",{useNewUrlParser:true});
 
 const NotesSchema = new mongoose.Schema({
     title:String,
